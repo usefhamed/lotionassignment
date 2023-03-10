@@ -1,0 +1,306 @@
+/* body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  font-size: 13px;
+  border-bottom: 1px lightgray solid;
+  height: 14vh;
+}
+
+div#title{
+  /* display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: aqua;
+  padding-left: 490 */
+
+  flex: 1;
+  /* padding-left: 50px; */
+  text-align: center;
+}
+
+h2#sidemenu-button{
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+h1#sitename{
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+div#topline{
+  background-color: rgb(114, 34, 114);
+  height: 3px;
+
+}
+
+div#sidebar{
+  flex: 1 0 1%;
+  border-right: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  flex-direction: column;
+  height: 85.4vh;
+}
+
+.main-container{
+  display: flex;
+  flex: 1 0 80%;
+}
+
+div#content{
+  flex: 1 0 67%;
+  text-align: left;
+  font-size: 15px;
+}
+
+.class{
+  display: none;
+}
+
+div#top-sidebar{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px lightgrey solid;
+}
+
+h3#notes-word{
+  padding-left: 10px;
+  padding-right: 22vh;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+h3#plussign{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+
+button{
+  all: unset;
+  cursor:pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+p#no-notes{
+  color: gray;
+  text-align: center;
+}
+
+.hidden1{
+  display: none;
+
+}
+
+div#placeholder{
+  flex: 1 0 67%;
+  text-align: left;
+  font-size: 15px;
+}
+
+p#placeholder-text{
+  color: grey;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 31vh;
+}
+
+.hidden1{
+  display: none;
+}
+
+
+/* This is from the React Quill documentation */
+
+/* body {
+  background: #f3f1f2;
+  font-family: sans-serif;
+}
+
+.app {
+  margin: 1rem 4rem;
+}
+
+.app .ql-container {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background: #fefcfc;
+} */
+
+/* Snow Theme */
+/* .app .ql-snow.ql-toolbar {
+  display: block;
+  background: #eaecec;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+} */
+
+/* Bubble Theme */
+/* .app .ql-bubble .ql-editor {
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
+
+.app .ql-editor {
+  min-height: 18em;
+}
+
+.themeSwitcher {
+  margin-top: 0.5em;
+  font-size: small;
+} */
+
+.editor{
+  height: 68vh;
+}
+
+div#topbar{
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+}
+
+div#titledate{
+  display: flex;
+  flex-direction: column;
+}
+
+button#save{   
+  padding: 10px;
+  /* margin-left: 115.7vh; */
+}
+
+button#delete{   
+  padding: 10px;
+}
+
+button#save:hover {
+  background-color: rgb(114, 34, 114);
+}
+
+button#delete:hover {
+  background-color: rgb(114, 34, 114);
+}
+
+input#titleinput{
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  outline: none;
+}
+
+div#savedelete{
+  display: flex;
+  margin-left: auto;
+}
+
+input#dateselect{
+  border: none;
+}
+
+button#add-note-button{
+  /* background-color: rgb(114, 34, 114); */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button#add-note-button:hover{
+  background-color: rgb(114, 34, 114);
+  color: white;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+}
+
+p#note-meta{
+  color: grey;
+  font-size: small;
+  margin: 0;
+  padding-top: 3px;
+  padding-left: 5px;
+}
+
+h3#note-title{
+  margin: 0;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+p#note-preview{
+  font-size: medium;
+  margin: 0;
+  padding: 5px;
+}
+
+.sidebar-note{
+  cursor: pointer;
+  border-bottom: solid lightgrey 1px;
+}
+
+
+.sidebar-note.active{
+  background: rgb(114, 34, 114);
+  color: white;
+  cursor: pointer;
+
+}
+
+
+div#savedtitle{
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+div#saveddate{
+  color: gray;
+  padding-left: 10px;
+  font-size: 12px;
+  
+}
+
+div#topbar-reader{
+  display: flex;
+  flex-direction: row;
+  height: 12vh;
+  border-bottom: 1px solid lightgrey;
+}
+
+div#savedcontent{
+  padding: 10px;
+}
